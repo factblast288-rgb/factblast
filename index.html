@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FACTBLAST Hindi — Science, Space, Human Body, Mystery और Technology के मजेदार और चौंकाने वाले facts.">
+  <meta name="theme-color" content="#0b0b12">
+  <link rel="icon" type="image/png" href="factblast-logo.png">
+  <title>FACTBLAST Hindi | Facts That Blow Your Mind</title>
+  <style>
+    :root{--bg:#090910;--card:#12121c;--card2:#171725;--text:#f5f5f7;--muted:#a7a7b5;--accent:#ff3158;--accent2:#7c5cff;--line:#28283a}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 85% 10%,#211447 0,transparent 28%),var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(9,9,16,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.5px}.logo-img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid #ffd21a;box-shadow:0 5px 22px #ffd21a33}.brand-accent{color:#ffd21a}
+    nav{display:flex;gap:24px;color:#c9c9d3;font-weight:600}nav a:hover{color:white}
+    .menu{display:none;background:none;border:0;color:white;font-size:27px}
+    .hero{padding:92px 0 72px;min-height:610px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px}
+    .pill{display:inline-flex;padding:7px 13px;border:1px solid #ffffff1a;border-radius:99px;background:#ffffff08;color:#d9d9e4;font-size:13px;margin-bottom:18px}
+    h1{font-size:clamp(44px,7vw,78px);line-height:1.02;letter-spacing:-3px}.gradient{background:linear-gradient(90deg,#fff,var(--accent),#a68cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{color:var(--muted);font-size:18px;max-width:650px;margin:24px 0 30px}.buttons{display:flex;gap:13px;flex-wrap:wrap}
+    .btn{padding:13px 19px;border-radius:12px;font-weight:800;border:1px solid var(--line);display:inline-flex;align-items:center;gap:8px}.primary{background:var(--accent);border-color:var(--accent);box-shadow:0 12px 35px #ff31582c}.secondary{background:#ffffff08}
+    .fact-orb{width:min(360px,80vw);aspect-ratio:1;margin:auto;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff5275,transparent 20%),radial-gradient(circle at 60% 60%,#735cff,transparent 38%),linear-gradient(135deg,#181225,#0e0e17);border:1px solid #ffffff19;box-shadow:inset 0 0 80px #000,0 0 80px #7c5cff20;display:grid;place-items:center;position:relative}
+    .fact-orb:before{content:"FACT";font-size:74px;font-weight:1000;letter-spacing:-5px;opacity:.9}.orbit{position:absolute;inset:8%;border:1px solid #ffffff20;border-radius:50%;transform:rotate(-22deg)}.orbit:after{content:"";width:13px;height:13px;border-radius:50%;background:white;position:absolute;top:6%;left:18%;box-shadow:0 0 18px white}
+    section{padding:74px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}.section-head h2{font-size:34px}.section-head p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,var(--card),#0e0e16);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.2s}.card:hover{transform:translateY(-5px);border-color:#ffffff26}
+    .thumb{height:170px;border-radius:13px;background:linear-gradient(135deg,#21152d,#15182a);display:grid;place-items:center;font-size:50px;margin-bottom:17px;border:1px solid #ffffff0c}.card h3{font-size:20px;margin-bottom:8px}.card p{color:var(--muted);font-size:14px}.watch{display:inline-block;margin-top:16px;color:#ff718b;font-weight:800}
+    .categories{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.cat{padding:19px 10px;text-align:center;background:#ffffff06;border:1px solid var(--line);border-radius:14px;font-weight:700}.cat span{display:block;font-size:27px;margin-bottom:5px}
+    .about{display:grid;grid-template-columns:190px 1fr 1fr;gap:25px;align-items:stretch}.about-brand{display:grid;place-items:center}.about-brand img{width:165px;height:165px;object-fit:contain;filter:drop-shadow(0 15px 30px #000)}.panel{padding:30px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#151521,#0d0d14)}.panel h3{font-size:25px;margin-bottom:12px}.panel p,.panel li{color:var(--muted)}.panel ul{padding-left:20px}
+    .cta{padding:48px;border-radius:22px;background:linear-gradient(120deg,#211126,#17152d);border:1px solid #ffffff16;text-align:center}.cta h2{font-size:38px}.cta p{color:var(--muted);margin:8px 0 22px}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted)}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+    .contact-cards{grid-template-columns:repeat(3,1fr)}.contact-card{display:block;text-align:center;padding:28px 20px}.contact-icon{font-size:38px;margin-bottom:10px}.contact-card h3{margin-bottom:5px}.contact-card p{word-break:break-word}
+    @media(max-width:850px){nav{display:none}.menu{display:block}.hero{grid-template-columns:1fr;text-align:center;padding-top:70px}.hero p{margin-left:auto;margin-right:auto}.buttons{justify-content:center}.cards{grid-template-columns:1fr 1fr}.categories{grid-template-columns:repeat(3,1fr)}.about{grid-template-columns:1fr}.about-brand{order:-1}.contact-cards{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){h1{letter-spacing:-2px}.cards{grid-template-columns:1fr}.contact-cards{grid-template-columns:1fr}.categories{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head h2{margin-bottom:5px}.cta{padding:32px 20px}.cta h2{font-size:29px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#"><img class="logo-img" src="factblast-logo.png" alt="FACTBLAST Logo"><span>FACT<span class="brand-accent">BLAST</span></span></a>
+    <nav><a href="#home">Home</a><a href="#videos">Videos</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero container" id="home">
+  <div>
+    <span class="pill">⚡ Hindi Facts • Science • Mystery • Space</span>
+    <h1>Facts जो आपका <span class="gradient">दिमाग हिला दें!</span></h1>
+    <p>FACTBLAST पर जानिए दुनिया के सबसे interesting, shocking और mind-blowing facts — आसान हिंदी में, छोटे और मजेदार अंदाज़ में।</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://youtube.com/@factblast-y8w" target="_blank" rel="noopener">▶ YouTube पर देखें</a>
+      <a class="btn secondary" href="#videos">Latest Facts ↓</a>
+    </div>
+  </div>
+  <div class="hero-logo-wrap"><div class="hero-ring"></div><img class="hero-logo" src="factblast-logo.png" alt="FACTBLAST original logo"></div>
+</section>
+
+<section id="videos">
+  <div class="container">
+    <div class="section-head"><div><h2>🔥 Latest Videos</h2><p>नए facts और videos यहाँ दिखाएँ</p></div><a class="watch" href="https://youtube.com/@factblast-y8w" target="_blank" rel="noopener">View YouTube →</a></div>
+    <div class="cards">
+      <article class="card"><div class="thumb">🌊</div><h3>समुद्र के पानी का भ्रम</h3><p>क्या समुद्र का पानी पीने से शरीर के साथ कुछ अजीब होता है? जानिए science.</p><a class="watch" href="https://youtube.com/@factblast-y8w" target="_blank" rel="noopener">Watch on YouTube →</a></article>
+      <article class="card"><div class="thumb">☀️</div><h3>सूर्य का सबसे बड़ा छलावा</h3><p>सूर्य से जुड़ा एक ऐसा fact जो पहली बार में विश्वास करना मुश्किल है.</p><a class="watch" href="https://youtube.com/@factblast-y8w" target="_blank" rel="noopener">Watch on YouTube →</a></article>
+      <article class="card"><div class="thumb">🧠</div><h3>दिमाग दर्द क्यों नहीं महसूस करता?</h3><p>Human brain और pain receptors के पीछे छिपा fascinating science.</p><a class="watch" href="https://youtube.com/@factblast-y8w" target="_blank" rel="noopener">Watch on YouTube →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="categories">
+  <div class="container">
+    <div class="section-head"><div><h2>🧠 Explore Categories</h2><p>अपना पसंदीदा topic चुनें</p></div></div>
+    <div class="categories">
+      <div class="cat"><span>🔬</span>Science</div><div class="cat"><span>🚀</span>Space</div><div class="cat"><span>🧠</span>Human Body</div><div class="cat"><span>👀</span>Mystery</div><div class="cat"><span>🤖</span>Technology</div><div class="cat"><span>📜</span>History</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head"><div><h2>✨ About FACTBLAST</h2><p>Curiosity से knowledge तक — एक fact at a time.</p></div></div>
+    <div class="about">
+      <div class="about-brand"><img src="factblast-logo.png" alt="FACTBLAST Logo"></div>
+      <div class="panel"><h3>हम क्या करते हैं?</h3><p>FACTBLAST एक Hindi facts platform है जहाँ Science, Space, Human Body, Technology, Mystery और दुनिया के amazing facts को आसान और entertaining अंदाज़ में पेश किया जाता है.</p><br><p>हमारा mission है — <strong>सीखना भी, मज़ा भी।</strong> ⚡</p></div>
+      <div class="panel"><h3>Why FACTBLAST?</h3><ul><li>Short & easy-to-understand Hindi content</li><li>Interesting और share-worthy facts</li><li>Science और knowledge पर focus</li><li>Regular Shorts और long-form videos</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head"><div><h2>📩 Contact FACTBLAST</h2><p>Collaboration, suggestions या business inquiries के लिए हमसे जुड़ें.</p></div></div>
+    <div class="cards contact-cards">
+      <a class="card contact-card" href="https://www.instagram.com/fact_blas_t/" target="_blank" rel="noopener">
+        <div class="contact-icon">📸</div>
+        <h3>Instagram</h3>
+        <p>@fact_blas_t</p>
+        <span class="watch">Open Instagram →</span>
+      </a>
+      <a class="card contact-card" href="mailto:factblast288@gmail.com">
+        <div class="contact-icon">✉️</div>
+        <h3>Email</h3>
+        <p>factblast288@gmail.com</p>
+        <span class="watch">Send Email →</span>
+      </a>
+      <a class="card contact-card" href="https://youtube.com/@factblast-y8w" target="_blank" rel="noopener">
+        <div class="contact-icon">▶️</div>
+        <h3>YouTube</h3>
+        <p>FACTBLAST Hindi</p>
+        <span class="watch">Visit Channel →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta"><h2>एक fact से शुरू करें! 🚀</h2><p>FACTBLAST को YouTube पर subscribe करें और अगला mind-blowing fact miss मत करें.</p><a class="btn primary" href="https://youtube.com/@factblast-y8w" target="_blank" rel="noopener">Subscribe on YouTube</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container foot"><div>© <span id="year"></span> FACTBLAST Hindi</div><div><a href="https://www.instagram.com/fact_blas_t/" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:factblast288@gmail.com">Email</a> · <a href="https://youtube.com/@factblast-y8w" target="_blank" rel="noopener">YouTube</a></div></div></footer>
+
+<script>
+function toggleMenu(){
+  const nav=document.querySelector('nav');
+  const open=nav.style.display==='flex';
+  nav.style.display=open?'none':'flex';
+  if(!open){nav.style.position='absolute';nav.style.top='72px';nav.style.left='0';nav.style.right='0';nav.style.padding='20px';nav.style.background='#0d0d15';nav.style.flexDirection='column';nav.style.borderBottom='1px solid #28283a'}
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
